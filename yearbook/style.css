@@ -42,7 +42,30 @@ body {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #fa3c33;
+   font-size:20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .active{
+  background-color: #fa3c33;
+  color: white;
+  }
+  li a:hover {
+    background-color: #000;
+    color: white;
   }
 
 /* Chonks */

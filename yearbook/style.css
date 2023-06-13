@@ -70,26 +70,16 @@ ul {
   }
 
   .top {
-    --offset: 50px; 
-  
-    position: sticky;
-    bottom: 20px;      
-    margin-right: 10px; 
-    place-self: end;
-    margin-top: calc(100vh + var(--offset));
-  
-    /* visual styling */
+    position: fixed;
+    bottom: 5%;      
+    right: 5%;
     text-decoration: none;
-    padding: 10px;
-    font-family: sans-serif;
+    font-size:20px;
+    padding: 10px 20px;
     color: #fff;
     background: #000;
-    border-radius: 100px;
+    border-radius: 5px;
     white-space: nowrap;
-  }
-  
-  p {
-    font-size: 25px;
   }
 
 /* Chonks */

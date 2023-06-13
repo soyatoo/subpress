@@ -39,7 +39,7 @@ body {
     width: 80%;
 }
 
-#layup2 {
+.layup2 {
     display: none;
 }
 
@@ -71,19 +71,6 @@ ul {
   li a:hover {
     background-color: #000;
     color: white;
-  }
-
-  .top {
-    position: fixed;
-    bottom: 5%;      
-    right: 5%;
-    text-decoration: none;
-    font-size:20px;
-    padding: 10px 20px;
-    color: #fff;
-    background: #000;
-    border-radius: 5px;
-    white-space: nowrap;
   }
 
 /* Chonks */
@@ -184,25 +171,6 @@ h5 {
 
 /* Responsive Rules */
 
-/* Tablet */
-
-@media only screen and (max-width: 768px) {
-
-}
-
-/* Mobile */
-
-@media only screen and (max-width: 400px) {
-
-    .layup1{
-        display: none;
-      }
-   
-      .layup2{
-        display: block;
-      }
-
-}
 
 /* Tablet */
 
@@ -233,5 +201,13 @@ h5 {
     .halfChonk > div {
         padding: 20px 0px 20px 0px;
     }
+
+    .layup1{
+        display: none;
+      }
+   
+    .layup2{
+        display: block;
+      }
     
 }

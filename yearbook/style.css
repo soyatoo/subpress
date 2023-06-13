@@ -181,6 +181,14 @@ h5 {
         width: 75%;
     }
 
+    .layup1{
+        display: none;
+      }
+   
+    .layup2{
+        display: block;
+      }
+
 }
 
 /* Mobile */

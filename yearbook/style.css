@@ -165,8 +165,9 @@ h5 {
     font-size: 14px;
 	color: #565459;
     font-weight: 600;
-    line-height: 2em;
+    line-height: 1.4em;
     margin: 0px;
+    font-style: italic;
 }
 
 /* Responsive Rules */

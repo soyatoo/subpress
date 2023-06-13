@@ -101,7 +101,7 @@ ul {
 }
 
 .negChunk {
-    padding: -8px 0px -8px 0px;
+    margin: -12px 0px -12px 0px;
 }
 
 /* Fonts */
@@ -171,6 +171,7 @@ h4 {
 
 h5 {
     font-size: 16px;
+    color: #626163;
     font-weight: 400;
     line-height: 1.6em;
     margin: 0px;

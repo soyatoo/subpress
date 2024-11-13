@@ -26,20 +26,19 @@
     position: relative;
     text-align: center;
     width: 100%;
-    max-width: 50em; /* max width in em */
+    max-width: 40em; /* max width in em */
   }
   
   .logo {
     width: 16em; /* Larger logo size for default */
     height: auto;
-    margin-bottom: 1em; /* Reduced margin between logo and tagline */
   }
   
   .tagline {
     font-size: 2.2em; /* Reduced font size */
-    line-height: 2.6em;
+    line-height: 1.4em;
     font-weight: 600;
-    margin-bottom: 0.5em; /* Reduced margin between tagline and description */
+    margin-bottom: 0.5em;
     text-transform: uppercase;
     letter-spacing: 0.05em; /* Slightly reduced letter spacing */
     color: #000;

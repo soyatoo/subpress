@@ -19,7 +19,7 @@
     min-height: 100vh;
     text-align: center;
     color: #333;
-    padding: 2em; /* Padding around the body, in em */
+    padding: 1.5em; /* Reduced padding around the body */
   }
   
   .landing-container {
@@ -30,25 +30,25 @@
   }
   
   .logo {
-    width: 9em; /* width in em */
+    width: 10em; /* Larger logo size for default */
     height: auto;
-    margin-bottom: 2em; /* margin between logo and tagline */
+    margin-bottom: 1em; /* Reduced margin between logo and tagline */
   }
   
   .tagline {
-    font-size: 2.5em; /* 2.5em font size */
+    font-size: 2.2em; /* Reduced font size */
     font-weight: 600;
-    margin-bottom: 2em; /* margin between tagline and description */
+    margin-bottom: 1.5em; /* Reduced margin between tagline and description */
     text-transform: uppercase;
-    letter-spacing: 0.1em; /* Spacing between letters */
+    letter-spacing: 0.05em; /* Slightly reduced letter spacing */
     color: #333;
   }
   
   .description {
-    font-size: 1.2em; /* 1.2em for body text */
-    line-height: 1.5;
+    font-size: 1.1em; /* Slightly reduced font size */
+    line-height: 1.4;
     color: #333;
-    padding: 0 2em; /* Padding on the left and right */
+    padding: 0 1.5em; /* Reduced padding on the left and right */
     max-width: 43em; /* Limiting width of description */
     margin-left: auto;
     margin-right: auto;
@@ -57,16 +57,18 @@
   /* Responsive adjustments */
   @media (max-width: 37.5em) { /* Adjusting for smaller screens, based on 600px */
     .tagline {
-      font-size: 2em; /* Reduced font size */
+      font-size: 2em; /* Reduced font size for mobile */
+      margin-bottom: 1.2em; /* Reduced margin on mobile */
     }
   
     .description {
       font-size: 1em; /* Smaller font size for description */
-      padding: 0 1.5em; /* Reduced padding */
+      padding: 0 1.2em; /* Further reduced padding for smaller screens */
     }
   
     .logo {
-      width: 7em; /* Reduce logo size on smaller screens */
+      width: 12em; /* Larger logo size on mobile */
+      margin-bottom: 0.8em; /* Slightly reduced margin on mobile */
     }
   }
   

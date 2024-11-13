@@ -112,5 +112,22 @@
   /* Responsive Adjustments */
   @media (max-width: 37.5em) { /* 600px */
     h1.tagline {
-      font-size: 2.5em; /* Adjusted font size for mobile 
+      font-size: 2.5em; /* Adjusted font size for mobile */
+      margin-bottom: 1em;
+    }
+  
+    h2.description {
+      font-size: 1.2em; /* Adjusted font size for description on mobile */
+      padding: 0 1.2em;
+    }
+  
+    .logo {
+      width: 12em; /* Adjust logo size for mobile */
+      margin-bottom: 0.8em;
+    }
+  
+    input[type="email"], button {
+      font-size: 1em; /* Adjust font size for form inputs on mobile */
+    }
+  }
   

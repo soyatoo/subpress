@@ -26,11 +26,12 @@
   
   .logo {
     position: absolute;
-    top: 20%;
+    top: 20%; /* Adjust this if necessary */
     left: 50%;
     transform: translateX(-50%);
     width: 150px; /* Adjust based on your logo size */
     height: auto;
+    z-index: 10; /* Ensure the logo is on top of other elements */
   }
   
   .tagline {
@@ -40,6 +41,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #333;
+    z-index: 5; /* This is to ensure the tagline is below the logo */
   }
   
   .description {
@@ -51,6 +53,7 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 5; /* This is to ensure the description is below the logo */
   }
   
   /* Responsive adjustments */

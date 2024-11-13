@@ -14,12 +14,13 @@
     font-family: 'Poppins', sans-serif;
     background-color: #FFEB3B; /* Yellow background */
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     text-align: center;
     color: #333;
-    padding: 1.5em; /* Reduced padding around the body */
+    padding: 1.5em;
   }
   
   .landing-container {
@@ -27,6 +28,7 @@
     text-align: center;
     width: 100%;
     max-width: 40em; /* Max width in em */
+    margin-bottom: 2em; /* Added margin to create space between description and form */
   }
   
   .logo {
@@ -59,14 +61,14 @@
     margin-top: 2em;
     padding: 1em;
     text-align: center;
+    width: 100%;
+    max-width: 400px; /* Ensure form isn't too wide */
   }
   
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
   }
   
   input[type="email"], button {

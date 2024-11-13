@@ -39,10 +39,10 @@
   /* Tagline Styling (h1) */
   h1.tagline {
     font-family: 'Sora', sans-serif; /* Apply Lexend Deca font */
-    font-size: 3em; /* Size can be adjusted */
-    font-weight: 400; /* Regular weight for readability */
+    font-size: 2.2em; /* Size can be adjusted */
+    font-weight: 900; /* Regular weight for readability */
     line-height: 1.2;
-    margin-bottom: 1.5em; /* Space below the h1 */
+    margin-bottom: 1em; /* Space below the h1 */
     color: #000; /* Darker color for contrast */
     text-align: center;
     text-transform: uppercase;
@@ -52,7 +52,7 @@
   /* Description Styling (h2) */
   h2.description {
     font-family: 'Poppins', sans-serif; /* Apply Poppins font for description */
-    font-size: 1.5em; /* Adjust font size for description */
+    font-size: 1.2em; /* Adjust font size for description */
     line-height: 1.4;
     font-weight:400;
     color: #333;

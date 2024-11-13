@@ -103,6 +103,8 @@
   button {
     background-color: #000;
     color: white;
+    text-transform: uppercase;
+    font-weight: 600;
     cursor: pointer;
   }
   

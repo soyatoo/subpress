@@ -38,7 +38,7 @@
   
   /* Tagline Styling (h1) */
   h1.tagline {
-    font-family: 'Lexend Deca', sans-serif; /* Apply Lexend Deca font */
+    font-family: 'Sora', sans-serif; /* Apply Lexend Deca font */
     font-size: 3em; /* Size can be adjusted */
     font-weight: 400; /* Regular weight for readability */
     line-height: 1.2;
@@ -63,7 +63,7 @@
   }
 
   h3 {
-    font-family: 'Lexend Deca', sans-serif; /* Apply Lexend Deca font */
+    font-family: 'Sora', sans-serif; /* Apply Lexend Deca font */
     font-size: 2em; /* Size can be adjusted */
     font-weight: 400; /* Regular weight for readability */
     line-height: 1.2;

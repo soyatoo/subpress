@@ -36,24 +36,42 @@
     height: auto;
   }
   
-  .tagline {
-    font-size: 2.2em;
-    line-height: 1.4em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
+  /* Tagline Styling (h1) */
+  h1.tagline {
+    font-family: 'Lexend Deca', sans-serif; /* Apply Lexend Deca font */
+    font-size: 3em; /* Size can be adjusted */
+    font-weight: 400; /* Regular weight for readability */
+    line-height: 1.2;
+    margin-bottom: 1.5em; /* Space below the h1 */
+    color: #000; /* Darker color for contrast */
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #000;
+    letter-spacing: 0.05em; /* Slight letter spacing */
   }
   
-  .description {
-    font-size: 1.1em;
+  /* Description Styling (h2) */
+  h2.description {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font for description */
+    font-size: 1.5em; /* Adjust font size for description */
     line-height: 1.4;
     color: #333;
     padding: 0 1.5em;
     max-width: 43em;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em; /* Space after description before the form */
+  }
+
+  h3 {
+    font-family: 'Lexend Deca', sans-serif; /* Apply Lexend Deca font */
+    font-size: 2em; /* Size can be adjusted */
+    font-weight: 400; /* Regular weight for readability */
+    line-height: 1.2;
+    margin-bottom: 1.5em; /* Space below the h1 */
+    color: #000; /* Darker color for contrast */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* Slight letter spacing */
   }
   
   /* Form Styles */
@@ -93,23 +111,6 @@
   
   /* Responsive Adjustments */
   @media (max-width: 37.5em) { /* 600px */
-    .tagline {
-      font-size: 2em; /* Adjusted font size for mobile */
-      margin-bottom: 1.2em;
-    }
-  
-    .description {
-      font-size: 1em; /* Adjusted font size for description on mobile */
-      padding: 0 1.2em;
-    }
-  
-    .logo {
-      width: 12em; /* Adjust logo size for mobile */
-      margin-bottom: 0.8em;
-    }
-  
-    input[type="email"], button {
-      font-size: 1em; /* Adjust font size for form inputs on mobile */
-    }
-  }
+    h1.tagline {
+      font-size: 2.5em; /* Adjusted font size for mobile 
   

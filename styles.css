@@ -14,57 +14,59 @@
     min-height: 100vh;
     text-align: center;
     color: #333;
-    padding: 20px;
+    padding: 2em; /* Padding around the body, in em */
   }
   
   .landing-container {
     position: relative;
     text-align: center;
-    max-width: 800px;
+    max-width: 50em; /* max width in em */
     width: 100%;
   }
   
   .logo {
     position: absolute;
-    top: 20%; /* Adjust this if necessary */
+    top: 3em; /* 3em from the top of the screen */
     left: 50%;
     transform: translateX(-50%);
-    width: 150px; /* Adjust based on your logo size */
+    width: 9em; /* width in em */
     height: auto;
     z-index: 10; /* Ensure the logo is on top of other elements */
   }
   
   .tagline {
-    font-size: 2.5rem;
+    font-size: 2.5em; /* 2.5em font size */
     font-weight: 600;
-    margin-top: 10%;
+    margin-top: 2em; /* margin from the logo */
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.1em; /* Spacing between letters */
     color: #333;
-    z-index: 5; /* This is to ensure the tagline is below the logo */
+    z-index: 5; /* This ensures the tagline stays below the logo */
+    position: relative; /* For z-index stacking */
   }
   
   .description {
-    font-size: 1.2rem;
-    margin-top: 20px;
+    font-size: 1.2em; /* 1.2em for body text */
+    margin-top: 2em; /* Spacing between tagline and description */
     line-height: 1.5;
     color: #333;
-    padding: 0 20px;
-    max-width: 700px;
+    padding: 0 2em; /* Padding on the left and right */
+    max-width: 43em; /* Limiting width of description */
     margin-left: auto;
     margin-right: auto;
-    z-index: 5; /* This is to ensure the description is below the logo */
+    z-index: 5; /* Ensures description stays below logo */
+    position: relative; /* To work with z-index */
   }
   
   /* Responsive adjustments */
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) { /* Adjusting for smaller screens, based on 600px */
     .tagline {
-      font-size: 2rem;
+      font-size: 2em; /* Reduced font size */
     }
   
     .description {
-      font-size: 1rem;
-      padding: 0 15px;
+      font-size: 1em; /* Smaller font size for description */
+      padding: 0 1.5em; /* Reduced padding */
     }
   }
   

@@ -52,8 +52,8 @@
   /* Description Styling (h2) */
   h2.description {
     font-family: 'Poppins', sans-serif; /* Apply Poppins font for description */
-    font-size: 1.2em; /* Adjust font size for description */
-    line-height: 1.4;
+    font-size: 1em; /* Adjust font size for description */
+    line-height: 1.6;
     font-weight:400;
     color: #333;
     padding: 0 1.5em;
@@ -65,8 +65,8 @@
 
   h3 {
     font-family: 'Sora', sans-serif; /* Apply Lexend Deca font */
-    font-size: 2em; /* Size can be adjusted */
-    font-weight: 400; /* Regular weight for readability */
+    font-size: 1em; /* Size can be adjusted */
+    font-weight: 900; /* Regular weight for readability */
     line-height: 1.2;
     margin-bottom: 1.5em; /* Space below the h1 */
     color: #000; /* Darker color for contrast */

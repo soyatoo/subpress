@@ -37,11 +37,12 @@
   
   .tagline {
     font-size: 2.2em; /* Reduced font size */
+    line-height: 2.6em;
     font-weight: 600;
     margin-bottom: 1.5em; /* Reduced margin between tagline and description */
     text-transform: uppercase;
     letter-spacing: 0.05em; /* Slightly reduced letter spacing */
-    color: #333;
+    color: #000;
   }
   
   .description {

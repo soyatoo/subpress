@@ -5,6 +5,11 @@
     box-sizing: border-box;
   }
   
+  html {
+    font-size: 16px; /* Base font size */
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
   body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFEB3B; /* Yellow background */
@@ -20,42 +25,33 @@
   .landing-container {
     position: relative;
     text-align: center;
-    max-width: 50em; /* max width in em */
     width: 100%;
+    max-width: 50em; /* max width in em */
   }
   
   .logo {
-    position: absolute;
-    top: 3em; /* 3em from the top of the screen */
-    left: 50%;
-    transform: translateX(-50%);
     width: 9em; /* width in em */
     height: auto;
-    z-index: 10; /* Ensure the logo is on top of other elements */
+    margin-bottom: 2em; /* margin between logo and tagline */
   }
   
   .tagline {
     font-size: 2.5em; /* 2.5em font size */
     font-weight: 600;
-    margin-top: 2em; /* margin from the logo */
+    margin-bottom: 2em; /* margin between tagline and description */
     text-transform: uppercase;
     letter-spacing: 0.1em; /* Spacing between letters */
     color: #333;
-    z-index: 5; /* This ensures the tagline stays below the logo */
-    position: relative; /* For z-index stacking */
   }
   
   .description {
     font-size: 1.2em; /* 1.2em for body text */
-    margin-top: 2em; /* Spacing between tagline and description */
     line-height: 1.5;
     color: #333;
     padding: 0 2em; /* Padding on the left and right */
     max-width: 43em; /* Limiting width of description */
     margin-left: auto;
     margin-right: auto;
-    z-index: 5; /* Ensures description stays below logo */
-    position: relative; /* To work with z-index */
   }
   
   /* Responsive adjustments */
@@ -67,6 +63,10 @@
     .description {
       font-size: 1em; /* Smaller font size for description */
       padding: 0 1.5em; /* Reduced padding */
+    }
+  
+    .logo {
+      width: 7em; /* Reduce logo size on smaller screens */
     }
   }
   

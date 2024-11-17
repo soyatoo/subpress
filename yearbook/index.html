@@ -116,21 +116,23 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        var coll = document.querySelectorAll('.collapsible');
+  // Update the querySelector to match the correct class name
+  var coll = document.querySelectorAll('.Collapsible');  // Use the correct class here
 
-        coll.forEach(function(section) {
-          section.querySelector('h2').addEventListener("click", function() {
-            var content = this.nextElementSibling.nextElementSibling; // The .content div
-            var arrow = this.querySelector('.arrow img');
+  coll.forEach(function(section) {
+    section.querySelector('h2').addEventListener("click", function() {
+      var content = this.nextElementSibling.nextElementSibling; // The .content div
+      var arrow = this.querySelector('.arrow img');
 
-            // Toggle the section
-            content.classList.toggle("open");
+      // Toggle the section
+      content.classList.toggle("open");
 
-            // Change the arrow direction
-            arrow.src = content.classList.contains("open") ? "img/chevron-up.png" : "img/chevron-down.png";
-          });
-        });
-      });
+      // Change the arrow direction
+      arrow.src = content.classList.contains("open") ? "img/chevron-up.png" : "img/chevron-down.png";
+    });
+  });
+});
+
     </script>
   </body>
 </html>

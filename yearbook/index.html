@@ -44,7 +44,7 @@
 
         <!-- Collapsible Photo Requirements Section -->
         <section class="photo-requirements">
-          <h2>Photo requirements <span class="arrow">&#9660;</span></h2>
+          <h2>Photo requirements <span class="arrow"><img src="img/chevron-down.png" alt="Chevron Down"></span></h2>
           <hr>
           <div class="content">
             <p><span style="color: #fa3c33">*</span> If the image accompanies a story, it can be included without these.</p>
@@ -66,7 +66,7 @@
 
         <!-- Collapsible Story Requirements Section -->
         <section class="story-requirements">
-          <h2>Story requirements <span class="arrow">&#9660;</span></h2>
+          <h2>Story requirements <span class="arrow"><img src="img/chevron-down.png" alt="Chevron Down"></span></h2>
           <hr>
           <div class="content">
             <ul>
@@ -87,8 +87,6 @@
           <p>Price: $60 AUD + shipping</p>
           <p>Softcover, 280-300 pages, limited edition of under 200 copies.</p>
 
-          <p>All contributors have a book put aside by default, but if you need to order multiple copies or aren't submitting, send an <a href="mailto:subliminalpress@gmail.com">email</a> to lodge a pre-order.</p>
-
           <!-- Formspree Form -->
           <form action="https://formspree.io/f/xovqlqgy" method="POST">
             <!-- Name input -->
@@ -98,17 +96,17 @@
 
             <!-- Email input -->
             <div class="form-group">
-              <input type="email" id="email" name="email" required placeholder="Email">
+              <input type="email" id="email" name="email" required placeholder="Email address">
             </div>
 
             <!-- City input -->
             <div class="form-group">
-              <input type="text" id="city" name="city" required placeholder="City">
+              <input type="text" id="city" name="city" required placeholder="City or State">
             </div>
-            
+
             <!-- Quantity Dropdown -->
             <div class="form-group">
-              <label for="quantity">Quantity</label>
+              <label for="quantity">Quantity:</label>
               <select id="quantity" name="quantity" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -135,16 +133,16 @@
         coll.forEach(function(section) {
           section.querySelector('h2').addEventListener("click", function() {
             var content = this.nextElementSibling.nextElementSibling; // The .content div
-            var arrow = this.querySelector('.arrow');
+            var arrow = this.querySelector('.arrow img');
 
             // Toggle the section
             content.classList.toggle("open");
 
-            // Toggle the arrow direction
+            // Change the arrow direction
             if (content.classList.contains("open")) {
-              arrow.innerHTML = "&#9650;"; // Up arrow
+              arrow.src = "img/chevron-up.png"; // Up arrow
             } else {
-              arrow.innerHTML = "&#9660;"; // Down arrow
+              arrow.src = "img/chevron-down.png"; // Down arrow
             }
           });
         });

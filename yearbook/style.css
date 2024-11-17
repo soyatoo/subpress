@@ -75,8 +75,37 @@ body {
     color: white;
   }
   
-  /* Fonts */
+  /* Chunks */
+  .chunk {
+    padding: 20px 0px 20px 0px;
+  }
   
+  .smallChunk {
+    padding: 8px 0px 8px 0px;
+  }
+  
+  .midChunk {
+    padding: 12px 0px 12px 0px;
+  }
+  
+  .largeChunk {
+    padding: 40px 0px 40px 0px;
+  }
+  
+  .halfChonk {
+    display: flex;
+  }
+  
+  .halfChonk > div {
+    flex: 1;
+    padding: 20px 24px 20px 0px;
+  }
+  
+  .negChunk {
+    margin: -12px 0px -12px 0px;
+  }
+  
+  /* Fonts */
   body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -151,7 +180,7 @@ body {
     margin: 0px;
   }
   
-  /* Form styling */
+  /* Form Styling */
   form {
     background-color: #f9f9f9;
     padding: 20px;
@@ -214,5 +243,10 @@ body {
     float: right;
     font-size: 18px;
     transition: transform 0.3s ease;
+  }
+  
+  .arrow img {
+    width: 20px;
+    height: 20px;
   }
   

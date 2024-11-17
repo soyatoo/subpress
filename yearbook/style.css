@@ -154,6 +154,7 @@ h2 {
     font-weight: 800;
     line-height: 1.3em;
     margin: 0;
+    padding: 20px 0;
 }
 
 h3 {
@@ -241,13 +242,12 @@ button[type="submit"]:hover {
 
 .arrow {
     float: right;
-    font-size: 18px;
     transition: transform 0.3s ease;
 }
 
 .arrow img {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
 }
 
 /* Responsive Design for Form Fields */

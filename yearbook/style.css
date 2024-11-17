@@ -4,7 +4,11 @@ body {
 }
 
 hr {
-    background-color:#fff;
+    border:none;
+}
+
+section.collapsable {
+    border-bottom: red;
 }
 
 .wrapper {

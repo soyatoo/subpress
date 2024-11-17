@@ -83,7 +83,7 @@ input[type="email"], button {
 }
 
 input[type="email"] {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* Increased space between field and button */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
@@ -93,6 +93,7 @@ button {
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
+  margin-top: 1rem; /* Adds space between the input field and the button */
 }
 
 button:hover {
@@ -116,5 +117,41 @@ button:focus {
 
   .logo {
       width: 12rem;
+  }
+
+  /* Adjust form input and button for smaller devices */
+  input[type="email"], button {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+      max-width: 18rem; /* Make input and button smaller */
+  }
+
+  button {
+      margin-top: 0.8rem; /* Adjust the margin for smaller screens */
+  }
+}
+
+@media (max-width: 25em) { /* 400px */
+  h1.tagline {
+      font-size: 1.8rem;
+  }
+
+  h2.description {
+      font-size: 0.8rem;
+  }
+
+  .logo {
+      width: 10rem;
+  }
+
+  /* Further adjust form input and button for very small screens */
+  input[type="email"], button {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      max-width: 16rem; /* Reduce further for small devices */
+  }
+
+  button {
+      margin-top: 0.6rem; /* Adjust the margin for very small screens */
   }
 }

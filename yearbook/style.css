@@ -182,15 +182,11 @@ body {
   
   /* Form Styling */
   form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
   }
   
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   label {
@@ -229,10 +225,7 @@ body {
   .content {
     display: none;
     padding: 5px 20px;
-    background-color: #fff;
     margin-top: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .content.open {

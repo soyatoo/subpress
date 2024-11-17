@@ -33,9 +33,7 @@
 
         <section class="about-yearbook">
           <h2>What is the yearbook?</h2>
-          <p>A yearly collection of pictures and stories that showcase the global exploring community's creativity and insanity. It captures who was around and what we did - the parties, the daring infiltrations, the cruisy explores, and everything in between. I tend to prefer candid shots. To maximize your chances of being included, read these guidelines and ask questions if needed. Going through past Yearbooks will also give you an idea of what I like, as due to submission volume and page count, I simply can't include everyone.<br><br>
-
-          Due to the nature of content published, the yearbook’s audience is kept on a strictly vetted basis. Please do not share submission details or the book itself unless you’ve asked first.</p>
+          <p>A yearly collection of pictures and stories that showcase the global exploring community's creativity and insanity...</p>
         </section>
 
         <!-- Collapsible Photo Requirements Section -->
@@ -44,7 +42,6 @@
           <hr>
           <div class="content">
             <p><span style="color: #fa3c33">*</span> If the image accompanies a story, it can be included without these.</p>
-
             <ul>
               <li>Taken between <strong>1st of Jan 2024 and 31st Dec 2024</strong>;</li>
               <li>Up to 100 images;</li>
@@ -53,10 +50,8 @@
               <li>Photos you have personally taken;</li>
               <li>Phone / DSLR / Film photos are all fine;</li>
             </ul>
-
             <p>But please, 1000px+ on one side <i>absolute minimum</i>.</p>
-
-            <p>Faces uncensored;<br> Faces are blurred on request, but I like to make them all the same style.</p>
+            <p>Faces uncensored; Faces are blurred on request, but I like to make them all the same style.</p>
           </div>
         </section>
 
@@ -72,7 +67,6 @@
               <li>Up to 2 stories per contributor;</li>
               <li>At least one image per story (doesn't need to include people in frame).</li>
             </ul>
-
             <p>If you've got a story to tell but aren't a confident writer, get in touch and we can workshop something.</p>
           </div>
         </section>
@@ -80,21 +74,17 @@
         <!-- Ordering Section with Formspree Integration -->
         <section class="ordering">
           <h2>Pre-order a copy</h2>
-
           <!-- Formspree Form -->
           <form action="https://formspree.io/f/xovqlqgy" method="POST">
             <div class="form-group">
               <input type="text" id="name" name="name" required placeholder="Name">
             </div>
-
             <div class="form-group">
               <input type="email" id="email" name="email" required placeholder="Email address">
             </div>
-
             <div class="form-group">
               <input type="text" id="city" name="city" required placeholder="City or State">
             </div>
-
             <div class="form-group">
               <label for="quantity">Quantity</label>
               <select id="quantity" name="quantity" required>
@@ -105,7 +95,6 @@
                 <option value="5">5</option>
               </select>
             </div>
-
             <div class="form-group">
               <button type="submit">Pre-order YB24</button>
             </div>
@@ -117,7 +106,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        var coll = document.querySelectorAll('.photo-requirements, .story-requirements');
+        var coll = document.querySelectorAll('.Collapsible'); // Corrected class name
 
         coll.forEach(function(section) {
           section.querySelector('h2').addEventListener("click", function() {

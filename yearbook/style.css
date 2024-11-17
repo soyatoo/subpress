@@ -1,22 +1,18 @@
 /* Structure */
+
 body {
     background-color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.4em;
-    color: #333333;
-    margin: 0;
-    padding: 0;
 }
 
 .wrapper {
     display: block;
-    overflow-y: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: absolute;
-    top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 #footer {
@@ -31,13 +27,16 @@ body {
 
 #content {
     margin: auto;
-    padding: 50px 0 100px 0;
-    width: 80%; /* Increased width for responsiveness */
-    max-width: 1200px;
+    padding: 50px 0px 100px 0px;
+    width: 50%;
 }
 
 #content img {
     max-width: 100%;
+}
+
+#contentBody {
+    width: 80%;
 }
 
 .layup2 {
@@ -47,7 +46,8 @@ body {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    overflow: hidden;
     background-color: #fff;
 }
 
@@ -62,6 +62,7 @@ li a {
     text-align: center;
     text-decoration: underline;
     padding: 10px 20px;
+    text-decoration: none;
 }
 
 .active {
@@ -75,37 +76,70 @@ li a:hover {
 }
 
 /* Chunks */
-.chunk, .smallChunk, .midChunk, .largeChunk {
-    padding: 20px 0;
+.chunk {
+    padding: 20px 0px 20px 0px;
 }
 
 .smallChunk {
-    padding: 8px 0;
+    padding: 8px 0px 8px 0px;
 }
 
 .midChunk {
-    padding: 12px 0;
+    padding: 12px 0px 12px 0px;
 }
 
 .largeChunk {
-    padding: 40px 0;
+    padding: 40px 0px 40px 0px;
 }
 
 .halfChonk {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .halfChonk > div {
     flex: 1;
-    padding: 20px 24px 20px 0;
+    padding: 20px 24px 20px 0px;
 }
 
 .negChunk {
-    margin: -12px 0;
+    margin: -12px 0px -12px 0px;
 }
 
 /* Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fa3c33;
+    text-decoration: underline;
+}
+
+a.inline {
+    padding: 0;
+    border: none;
+    background-color: rgba(44, 45, 47, .1);
+}
+
+a.inline:hover {
+    border: none;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus,
+.swappie:hover,
+#email:hover {
+    color: #000;
+    background-color: rgba(44, 45, 47, .1);
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 56px;
     color: #fa3c33;
@@ -143,31 +177,7 @@ h5 {
     color: #626163;
     font-weight: 400;
     line-height: 1.6em;
-    margin: 0;
-}
-
-/* Links */
-a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #fa3c33;
-    text-decoration: underline;
-}
-
-a.inline {
-    padding: 0;
-    border: none;
-    background-color: rgba(44, 45, 47, 0.1);
-}
-
-a.inline:hover {
-    border: none;
-}
-
-a:hover, a:focus, .swappie:hover, #email:hover {
-    color: #000;
-    background-color: rgba(44, 45, 47, 0.1);
-    text-decoration: underline;
+    margin: 0px;
 }
 
 /* Form Styling */
@@ -177,6 +187,8 @@ form {
 
 .form-group {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 label {
@@ -185,12 +197,16 @@ label {
     font-weight: 600;
 }
 
-input[type="text"], input[type="email"], select {
+input[type="text"],
+input[type="email"],
+select {
     width: 100%;
-    padding: 8px;
+    max-width: 300px; /* Max width on desktop */
+    padding: 10px 16px; /* Horizontal padding for comfortable typing */
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    margin: 0 auto; /* Center the form fields */
 }
 
 button[type="submit"] {
@@ -202,7 +218,10 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    max-width: 300px; /* Button width on desktop */
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
 }
 
 button[type="submit"]:hover {
@@ -231,49 +250,27 @@ button[type="submit"]:hover {
     height: 20px;
 }
 
-/* Responsive Design */
+/* Responsive Design for Form Fields */
 @media (max-width: 768px) {
-    #content {
-        width: 95%;
+    .form-group input,
+    .form-group select {
+        max-width: none;
+        padding: 10px 24px; /* Increased horizontal padding on mobile */
     }
 
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    .halfChonk > div {
-        padding: 12px 0;
-        flex: 100%;
-    }
-
-    ul {
-        padding: 10px;
-    }
-
-    li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    .form-group input, .form-group select {
-        font-size: 14px;
+    button[type="submit"] {
+        max-width: none; /* Button fills available width on mobile */
+        padding: 12px 24px; /* Increased padding for better click area */
     }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 30px;
+    .form-group input,
+    .form-group select {
+        padding: 12px 24px; /* Further increased padding for small screens */
     }
 
-    h2 {
-        font-size: 24px;
-    }
-
-    .form-group input, .form-group select {
-        font-size: 12px;
+    button[type="submit"] {
+        padding: 14px 24px; /* Further increased button padding for small screens */
     }
 }

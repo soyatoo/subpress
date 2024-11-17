@@ -13,9 +13,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
-
-    <!-- Preload CSS for better performance -->
-    <link rel="preload" href="style.css" as="style">
   </head>
   <body>
     <div class="wrapper">
@@ -89,22 +86,18 @@
 
           <!-- Formspree Form -->
           <form action="https://formspree.io/f/xovqlqgy" method="POST">
-            <!-- Name input -->
             <div class="form-group">
               <input type="text" id="name" name="name" required placeholder="Name">
             </div>
 
-            <!-- Email input -->
             <div class="form-group">
               <input type="email" id="email" name="email" required placeholder="Email address">
             </div>
 
-            <!-- City input -->
             <div class="form-group">
               <input type="text" id="city" name="city" required placeholder="City or State">
             </div>
 
-            <!-- Quantity Dropdown -->
             <div class="form-group">
               <label for="quantity">Quantity</label>
               <select id="quantity" name="quantity" required>
@@ -116,7 +109,6 @@
               </select>
             </div>
 
-            <!-- Submit button -->
             <div class="form-group">
               <button type="submit">Pre-order YB24</button>
             </div>
@@ -139,11 +131,7 @@
             content.classList.toggle("open");
 
             // Change the arrow direction
-            if (content.classList.contains("open")) {
-              arrow.src = "img/chevron-up.png"; // Up arrow
-            } else {
-              arrow.src = "img/chevron-down.png"; // Down arrow
-            }
+            arrow.src = content.classList.contains("open") ? "img/chevron-up.png" : "img/chevron-down.png";
           });
         });
       });

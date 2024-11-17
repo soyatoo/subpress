@@ -3,6 +3,10 @@ body {
     background-color: #fff;
 }
 
+hr {
+    color:#626163;
+}
+
 .wrapper {
     display: block;
     overflow-y: scroll;

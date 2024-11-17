@@ -191,8 +191,6 @@ form {
 
 .form-group {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 label {
@@ -227,7 +225,6 @@ button[type="submit"] {
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 button[type="submit"]:hover {
@@ -239,6 +236,7 @@ button[type="submit"]:hover {
     display: none;
     padding: 5px 20px;
     margin-top: 10px;
+    border-bottom: red;
 }
 
 .content.open {

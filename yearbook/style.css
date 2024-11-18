@@ -42,10 +42,6 @@ ul {
     background-color: #fff;
 }
 
-li {
-    float: left;
-}
-
 li a {
     display: block;
     color: #fa3c33;

@@ -281,4 +281,12 @@ button[type="submit"]:hover {
     button[type="submit"] {
         padding: 14px 24px;
     }
+
+    #content {
+        max-width: 80%;
+    }
+
+    h2 {
+        font-size:24px;
+    }
 }

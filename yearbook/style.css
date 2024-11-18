@@ -1,14 +1,14 @@
 /* Structure */
 body {
     background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: #333333;
 }
 
 hr {
     border:none;
-}
-
-section.collapsable {
-    border-bottom: red;
 }
 
 .wrapper {
@@ -20,16 +20,6 @@ section.collapsable {
     right: 0;
     top: 0;
     bottom: 0;
-}
-
-#footer {
-    position: fixed;
-    bottom: 40px;
-    z-index: 0;
-}
-
-.center {
-    text-align: center;
 }
 
 #content {
@@ -44,10 +34,6 @@ section.collapsable {
 
 #contentBody {
     width: 80%;
-}
-
-.layup2 {
-    display: none;
 }
 
 ul {
@@ -82,43 +68,7 @@ li a:hover {
     color: white;
 }
 
-/* Chunks */
-.chunk {
-    padding: 20px 0px 20px 0px;
-}
-
-.smallChunk {
-    padding: 8px 0px 8px 0px;
-}
-
-.midChunk {
-    padding: 12px 0px 12px 0px;
-}
-
-.largeChunk {
-    padding: 40px 0px 40px 0px;
-}
-
-.halfChonk {
-    display: flex;
-}
-
-.halfChonk > div {
-    flex: 1;
-    padding: 20px 24px 20px 0px;
-}
-
-.negChunk {
-    margin: -12px 0px -12px 0px;
-}
-
 /* Fonts */
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.4em;
-    color: #333333;
-}
 
 a {
     text-decoration: none;
@@ -164,33 +114,11 @@ h2 {
     padding: 20px 0;
 }
 
-h3 {
-    font-size: 20px;
-    color: #fa3c33;
-    font-weight: 600;
-    line-height: 1.75em;
-    margin: 0;
-}
-
-h4 {
-    font-size: 20px;
-    color: #565459;
-    font-weight: 400;
-    line-height: 1.75em;
-    margin: 0;
-}
-
-h5 {
-    font-size: 16px;
-    color: #626163;
-    font-weight: 400;
-    line-height: 1.6em;
-    margin: 0px;
-}
-
 /* Form Styling */
 form {
     margin-top: 20px;
+    width: 80%;
+    max-width: 200px;
 }
 
 .form-group {
@@ -207,7 +135,6 @@ input[type="text"],
 input[type="email"],
 select {
     width: 100%;
-    max-width: 300px;
     padding: 10px 16px;
     font-size: 16px;
     border: 1px solid #ddd;
@@ -224,7 +151,6 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    max-width: 300px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -283,7 +209,7 @@ button[type="submit"]:hover {
     }
 
     #content {
-        max-width: 80%;
+        width: 80%;
     }
 
     h2 {
